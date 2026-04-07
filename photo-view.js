@@ -9,7 +9,7 @@ viewer.innerHTML = `
   <button class="pv-prev">‹</button>
   <img class="pv-image">
   <button class="pv-next">›</button>
-  <a class="pv-download" download>Pobierz</a>
+  <a class="pv-download" download>Download</a>
 `;
 
 document.body.appendChild(viewer);
