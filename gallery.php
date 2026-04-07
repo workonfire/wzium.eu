@@ -56,7 +56,7 @@ function getImages($dir): false|array {
 
 <div id="gallery" class="<?php echo isset($_GET['album']) ? 'open' : ''; ?>">
 
-    <button id="gallery-back" onclick="window.location='gallery.php'">← powrót</button>
+    <button id="gallery-back" onclick="window.location='gallery.php'">← back</button>
 
     <?php if (isset($_GET['album'])):
         $albumName = basename($_GET['album']);
@@ -73,7 +73,7 @@ function getImages($dir): false|array {
                     <img src="<?php echo 'albums/' . $albumName . '/' . basename($img); ?>" alt="A picture">
                 </div>
             <?php endforeach; else: ?>
-                <div id="msg">Brak zdjęć w albumie</div>
+                <div id="msg">This album is empty</div>
             <?php endif; ?>
 
         </div>
