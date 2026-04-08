@@ -25,7 +25,7 @@ function show(index) {
     if (index >= items.length) index = 0;
 
     currentIndex = index;
-    const src = items[currentIndex].src;
+    const src = items[currentIndex].dataset.full || items[currentIndex].src;
 
     img.src = src;
     downloadBtn.href = src;

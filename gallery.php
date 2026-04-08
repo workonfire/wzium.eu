@@ -31,6 +31,7 @@ function getImages($dir): false|array {
         $thumb = "albums/$name/thumb.jpg";
         $descFile = "$album/description.txt";
         $desc = file_exists($descFile) ? trim(file_get_contents($descFile)) : "";
+        $count = count(getImages($album));
         ?>
 
         <a href="?album=<?php echo urlencode($name); ?>" class="album-card">
@@ -47,6 +48,7 @@ function getImages($dir): false|array {
                 <div class="album-desc">
                     <?php echo htmlspecialchars($desc); ?>
                 </div>
+                <div class="album-desc"><?php echo $count . ' ' . ($count === 1 ? 'photo' : 'photos'); ?></div>
             <?php endif; ?>
 
         </a>
@@ -70,7 +72,12 @@ function getImages($dir): false|array {
 
             <?php if ($images): foreach ($images as $img): ?>
                 <div class="photo-item">
-                    <img src="<?php echo 'albums/' . $albumName . '/' . basename($img); ?>" alt="A picture">
+                    <?php $base = pathinfo(basename($img), PATHINFO_FILENAME); ?>
+                    <img
+                            src="albums/<?php echo $albumName; ?>/thumbs/<?php echo $base; ?>.jpg"
+                            data-full="albums/<?php echo $albumName; ?>/<?php echo basename($img); ?>"
+                            alt="A picture"
+                    >
                 </div>
             <?php endforeach; else: ?>
                 <div id="msg">This album is empty</div>

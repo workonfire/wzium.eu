@@ -205,19 +205,18 @@ nav a:hover {
 }
 
 .album-label, .project-label {
+  color: white;
   padding: 10px 12px;
   letter-spacing: 0.1em;
 }
 
 .album-label {
   font-size: 0.75rem;
-  color: #666;
   text-transform: uppercase;
 }
 
 .project-label {
   font-size: 1rem;
-  color: white;
 }
 
 .photo-item {
