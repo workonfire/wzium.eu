@@ -151,10 +151,12 @@ nav a:hover {
 }
 
 #projects-grid {
+  margin: 0 auto;
   grid-template-columns: 1fr;
-  max-width: 600px;
+  max-width: 400px;
+  width: 100%;
+  padding: 0 16px;
 }
-
 
 .album-card, .project-card {
   background: #161616;
@@ -190,7 +192,11 @@ nav a:hover {
 }
 
 .project-thumb {
-  width: 25%;
+  margin-left: 8px;
+  width: 90px;
+  min-width: 90px;
+  height: 90px;
+  flex-shrink: 0;
 }
 
 .album-no-thumb {
@@ -288,7 +294,7 @@ nav a:hover {
 
 .album-desc {
   padding: 0 12px 12px 12px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #555;
   line-height: 1.4;
 }
