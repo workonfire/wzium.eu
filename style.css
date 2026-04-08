@@ -20,8 +20,9 @@ body {
 }
 
 .colorful {
+  font-family: "Fredericka the Great", serif;
   font-size: clamp(5rem, 15vw, 10rem);
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.04em;
   background: linear-gradient(
@@ -44,8 +45,9 @@ body {
 }
 
 .normal {
+  font-family: "Fredericka the Great", serif;
   font-size: clamp(5rem, 15vw, 10rem);
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.04em;
   color: #ccc;
@@ -137,36 +139,60 @@ nav a:hover {
   letter-spacing: 0.06em;
 }
 
-#gallery-grid {
+#gallery-grid, #projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 10px;
   width: 100%;
+}
+
+#gallery-grid {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   max-width: 1000px;
 }
 
+#projects-grid {
+  grid-template-columns: 1fr;
+  max-width: 600px;
+}
 
-.album-card {
+
+.album-card, .project-card {
   background: #161616;
   border: 1px solid #222;
   cursor: default;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
   transition: border-color 0.2s;
+}
+
+.album-card {
+  flex-direction: column;
+}
+
+.project-card {
+  flex-direction: row;
+  align-items: center;
 }
 
 .album-card:hover {
   border-color: #444;
 }
 
-.album-thumb {
-  width: 100%;
+.album-thumb, .project-thumb {
   aspect-ratio: 1;
   object-fit: cover;
   display: block;
   background: #111;
 }
+
+.album-thumb {
+  width: 100%;
+}
+
+.project-thumb {
+  width: 25%;
+}
+
 .album-no-thumb {
   width: 100%;
   aspect-ratio: 1;
@@ -177,12 +203,21 @@ nav a:hover {
   color: #2a2a2a;
   font-size: 2.5rem;
 }
-.album-label {
+
+.album-label, .project-label {
   padding: 10px 12px;
-  font-size: 0.75rem;
   letter-spacing: 0.1em;
+}
+
+.album-label {
+  font-size: 0.75rem;
   color: #666;
   text-transform: uppercase;
+}
+
+.project-label {
+  font-size: 1rem;
+  color: white;
 }
 
 .photo-item {
