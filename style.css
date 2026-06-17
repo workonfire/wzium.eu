@@ -324,7 +324,7 @@ nav a:hover {
 }
 
 .album-cover {
-    width: 360px;
+    width: 180px;
     max-width: 70vw;
     height: auto;
     display: block;
