@@ -3,7 +3,11 @@ $baseDir = __DIR__ . '/albums';
 $albums = array_filter(glob($baseDir . '/*'), 'is_dir');
 
 function getImages($dir): false|array {
-    return glob($dir . '/*.{jpg,jpeg,png,gif,webp}', GLOB_BRACE);
+    $images = glob($dir . '/*.{jpg,jpeg,png,gif,webp}', GLOB_BRACE) ?: [];
+
+    return array_values(array_filter($images, function ($img) {
+        return strtolower(basename($img)) !== 'thumb.jpg';
+    }));
 }
 ?>
 
