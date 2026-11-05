@@ -12,7 +12,7 @@ function getImages($dir): false|array {
 ?>
 
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>wziumGallery</title>
