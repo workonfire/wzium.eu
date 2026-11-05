@@ -48,8 +48,8 @@ function getImages($dir): false|array {
                 <div class="album-desc">
                     <?php echo htmlspecialchars($desc); ?>
                 </div>
-                <div class="album-desc"><?php echo $count . ' ' . ($count === 1 ? 'photo' : 'photos'); ?></div>
             <?php endif; ?>
+                <div class="album-desc"><?php echo $count . ' ' . ($count === 1 ? 'photo' : 'photos'); ?></div>
 
         </a>
 
