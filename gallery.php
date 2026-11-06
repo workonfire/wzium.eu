@@ -15,7 +15,7 @@ function getImages($dir): false|array {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>wziumGallery</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,7 +80,7 @@ function getImages($dir): false|array {
                     <img
                             src="albums/<?php echo $albumName; ?>/thumbs/<?php echo $base; ?>.jpg"
                             data-full="albums/<?php echo $albumName; ?>/<?php echo basename($img); ?>"
-                            alt="A picture"
+                            alt="<?php echo $base; ?>"
                     >
                 </div>
             <?php endforeach; else: ?>
