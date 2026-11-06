@@ -156,7 +156,7 @@ nav a:hover {
     display: grid;
     gap: 10px;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: 1000px;
 }
 
@@ -412,6 +412,9 @@ nav a:hover {
 @media (min-width: 720px) {
     #projects-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #gallery-grid {
+            grid-template-columns: repeat(5, minmax(0, 1fr));
     }
 }
 

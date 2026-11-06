@@ -9,6 +9,7 @@ for album in "$ALBUMS_DIR"/*/; do
 
     for img in "$album"*.{jpg,jpeg,png,gif,webp}; do
         [ -f "$img" ] || continue
+        [ "$(basename "$img")" = "thumb.jpg" ] && continue
 
         base=$(basename "$img")
         name="${base%.*}"
