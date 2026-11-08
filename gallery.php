@@ -43,7 +43,7 @@ function getImages($dir): false|array {
             $descFile = "$album/description.txt";
             $desc = file_exists($descFile) ? trim(file_get_contents($descFile)) : "";
             $count = count(getImages($album));
-            ?>
+        ?>
 
             <a href="?album=<?php echo urlencode($name); ?>" class="album-card">
 
@@ -75,7 +75,7 @@ function getImages($dir): false|array {
             $albumName = basename($_GET['album']);
             $albumPath = $baseDir . '/' . $albumName;
             $images = is_dir($albumPath) ? getImages($albumPath) : [];
-            ?>
+        ?>
 
             <div id="gallery-title"><?php echo htmlspecialchars($albumName); ?></div>
 

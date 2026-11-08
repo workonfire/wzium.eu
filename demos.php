@@ -48,10 +48,6 @@ $tracks = [
         <?php foreach ($tracks as $index => $track): ?>
 
             <div class="audio-player">
-                <div class="player-top">
-                    <span class="player-format">FLAC · LOSSLESS</span>
-                </div>
-
                 <div class="player-info">
                     <div class="track-title">
                         <?= htmlspecialchars($track["title"], ENT_QUOTES, "UTF-8") ?>

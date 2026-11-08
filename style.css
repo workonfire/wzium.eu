@@ -481,17 +481,6 @@ nav a:hover {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
-.player-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.65rem;
-    letter-spacing: 0.15em;
-}
-
-.player-format {
-    color: #444;
-}
 
 .player-info {
     display: flex;
