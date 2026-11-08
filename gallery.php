@@ -26,7 +26,11 @@ function getImages($dir): false|array {
     <link type="image/png" sizes="96x96" rel="icon" href="assets/favicon/icons8-rainbow-3d-fluency-96.png">
 </head>
 <body>
-
+    <div class="ambient-background" aria-hidden="true">
+        <div class="ambient-glow ambient-glow-1"></div>
+        <div class="ambient-glow ambient-glow-2"></div>
+        <div class="ambient-glow ambient-glow-3"></div>
+    </div>
     <h1>
         <span class="colorful">gal</span><span class="normal">lery</span>
     </h1>

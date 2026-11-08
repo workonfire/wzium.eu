@@ -21,6 +21,12 @@ body {
     justify-content: center;
     gap: 48px;
     padding: 48px 0;
+    position: relative;
+}
+
+.page-content {
+    position: relative;
+    z-index: 1;
 }
 
 .colorful {
@@ -637,4 +643,80 @@ nav a:hover {
 .download-btn:hover {
     border-color: #f4b8f0;
     color: #f4b8f0;
+}
+/* Ambient pastel background */
+
+.ambient-background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+    isolation: isolate;
+}
+
+.ambient-glow {
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    filter: blur(90px);
+
+    opacity: 0.22;
+
+    will-change: transform;
+
+    animation: ambient-float 18s ease-in-out infinite alternate;
+}
+
+.ambient-glow-1 {
+    background: #f7b8d2;
+
+    top: 10%;
+    left: 5%;
+
+    animation-duration: 20s;
+}
+
+.ambient-glow-2 {
+    background: #c9b8f5;
+
+    top: 40%;
+    left: 55%;
+
+    animation-duration: 25s;
+    animation-delay: -8s;
+}
+
+.ambient-glow-3 {
+    background: #a9d5fa;
+
+    top: 65%;
+    left: 20%;
+
+    animation-duration: 22s;
+    animation-delay: -12s;
+}
+
+@keyframes ambient-float {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(120px, -80px, 0);
+    }
+
+    100% {
+        transform: translate3d(-80px, 100px, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ambient-glow {
+        animation: none;
+    }
 }

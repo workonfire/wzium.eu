@@ -29,6 +29,11 @@ $tracks = [
 </head>
 
 <body>
+    <div class="ambient-background" aria-hidden="true">
+        <div class="ambient-glow ambient-glow-1"></div>
+        <div class="ambient-glow ambient-glow-2"></div>
+        <div class="ambient-glow ambient-glow-3"></div>
+    </div>
     <h1>
         <span class="colorful">de</span><span class="normal">mos</span>
     </h1>
