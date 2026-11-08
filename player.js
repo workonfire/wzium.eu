@@ -38,7 +38,7 @@ document.querySelectorAll(".audio-player").forEach(player => {
     });
 
     audio.addEventListener("play", () => {
-        playIcon.textContent = "Ⅱ";
+        playIcon.textContent = "II";
         playBtn.setAttribute("aria-label", "Pause");
     });
 
