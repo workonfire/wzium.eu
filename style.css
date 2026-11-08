@@ -82,7 +82,7 @@ nav {
 }
 
 nav a {
-    background: #1a1a1a;
+    background: rgba(255, 255, 255, 0.055);
     border: 1px solid #2a2a2a;
     color: #aaa;
     font-family: inherit;
@@ -294,8 +294,7 @@ nav a:hover {
 
 .album-card,
 .project-card {
-    background: #161616;
-    border: 1px solid #222;
+    background: rgba(0, 0, 0, 0.25);
     cursor: default;
     overflow: hidden;
     display: flex;
@@ -644,14 +643,13 @@ nav a:hover {
     border-color: #f4b8f0;
     color: #f4b8f0;
 }
-/* Ambient pastel background */
 
 .ambient-background {
     position: fixed;
     inset: 0;
     overflow: hidden;
     pointer-events: none;
-    z-index: 0;
+    z-index: -1;
     isolation: isolate;
 }
 
