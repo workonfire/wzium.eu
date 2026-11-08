@@ -95,6 +95,6 @@ function getImages($dir): false|array {
         <?php endif; ?>
 
     </div>
-    <script src="photo-view.js"></script>
+    <script src="scripts/photo-view.js"></script>
 </body>
 </html>

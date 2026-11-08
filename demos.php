@@ -115,6 +115,6 @@ $tracks = [
 
     </section>
 
-    <script src="player.js" defer></script>
+    <script src="scripts/player.js" defer></script>
 </body>
 </html>
