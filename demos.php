@@ -85,7 +85,7 @@ $tracks = [
                             download
                             aria-label="Download <?= htmlspecialchars($track["title"], ENT_QUOTES, "UTF-8") ?>"
                             title="Download"
-                        >🠟</a>
+                        >⤓</a>
                     </div>
 
                     <div class="volume-control">
