@@ -314,7 +314,9 @@ nav a:hover {
 }
 
 .project-card-more {
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .project-thumb {
