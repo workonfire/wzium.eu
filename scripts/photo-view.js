@@ -1,6 +1,7 @@
 const items = Array.from(document.querySelectorAll('.photo-item img'));
 
 let currentIndex = 0;
+let loadingTimer;
 
 const viewer = document.createElement('div');
 viewer.id = 'photo-viewer';
@@ -10,6 +11,9 @@ viewer.innerHTML = `
   <img class="pv-image">
   <button class="pv-next">›</button>
   <a class="pv-download" download>Download</a>
+  <div class="pv-loading">
+    <span></span>
+  </div>
 `;
 
 document.body.appendChild(viewer);
@@ -27,10 +31,37 @@ function show(index) {
     currentIndex = index;
     const src = items[currentIndex].dataset.full || items[currentIndex].src;
 
-    img.src = src;
-    downloadBtn.href = src;
+    clearTimeout(loadingTimer);
+
+    viewer.classList.remove('loading', 'load-error');
+
+    img.onload = () => {
+        clearTimeout(loadingTimer);
+        viewer.classList.remove('loading');
+    };
+
+    img.onerror = () => {
+        clearTimeout(loadingTimer);
+        viewer.classList.remove('loading');
+        viewer.classList.add('load-error');
+    };
 
     viewer.classList.add('open');
+
+    loadingTimer = setTimeout(() => {
+        if (!img.complete) {
+            viewer.classList.add('loading');
+        }
+    }, 150);
+
+    img.src = src;
+
+    if (img.complete) {
+        clearTimeout(loadingTimer);
+        viewer.classList.remove('loading');
+    }
+
+    downloadBtn.href = src;
 }
 
 items.forEach((el, i) => {
