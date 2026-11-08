@@ -295,6 +295,7 @@ nav a:hover {
 .album-card,
 .project-card {
     background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     cursor: default;
     overflow: hidden;
     display: flex;
