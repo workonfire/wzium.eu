@@ -3,12 +3,12 @@ $tracks = [
     [
         "title" => "Invasion",
         "artist" => "Wzium",
-        "file" => "assets/Invasion.flac"
+        "file" => "assets/songs/Invasion.flac"
     ],
     [
         "title" => "Resurrection",
         "artist" => "Wzium",
-        "file" => "assets/Resurrection.flac"
+        "file" => "assets/songs/Resurrection.flac"
     ]
 ];
 ?>
