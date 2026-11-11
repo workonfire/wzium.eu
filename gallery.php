@@ -99,6 +99,7 @@ function getImages($dir): false|array {
         <?php endif; ?>
 
     </div>
+    <a href="license.html">See license</a>
     <script src="scripts/photo-view.js"></script>
 </body>
 </html>

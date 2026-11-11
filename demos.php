@@ -116,6 +116,8 @@ $tracks = [
 
     </section>
 
+    <a href="license.html">See license</a>
+
     <script src="scripts/player.js" defer></script>
 </body>
 </html>

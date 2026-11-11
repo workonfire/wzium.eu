@@ -769,3 +769,15 @@ nav a:hover {
         transform: translateX(300%);
     }
 }
+
+#licensing {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.license-element {
+    padding: 10px;
+}
