@@ -757,7 +757,8 @@ nav a:hover {
     }
 }
 
-#licensing {
+#licensing,
+#about-me {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
@@ -765,6 +766,7 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-.license-element {
+.license-element,
+.about-me-element {
     padding: 10px;
 }
