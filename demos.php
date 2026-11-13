@@ -34,6 +34,10 @@ $tracks = [
         <div class="ambient-glow ambient-glow-2"></div>
         <div class="ambient-glow ambient-glow-3"></div>
     </div>
+    <a href="/" class="home-button" aria-label="Strona główna">
+        ← HOME
+    </a>
+
     <h1>
         <span class="colorful">de</span><span class="normal">mos</span>
     </h1>
