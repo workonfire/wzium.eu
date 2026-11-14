@@ -2,7 +2,7 @@
 $projects = [
     [
         "title" => "stackslib",
-        "description" => "A Python implementation of the UNO card game + a multiplayer server.",
+        "description" => "A Python implementation of the UNO card game with multiplayer server support.",
         "image" => "assets/projects/stackslib.png",
         "language" => "Python",
         "language_class" => "python",
@@ -15,7 +15,7 @@ $projects = [
     ],
     [
         "title" => "stacksTUI",
-        "description" => "A beautiful terminal interface for the UNO game based on stackslib.",
+        "description" => "A terminal-based interface for the UNO card game, built on top of stackslib.",
         "image" => "assets/projects/stackstui.png",
         "language" => "Python",
         "language_class" => "python",
@@ -29,7 +29,7 @@ $projects = [
     ],
     [
         "title" => "BucikGenerators",
-        "description" => "A customizable Minecraft plugin for creating custom block generators.",
+        "description" => "A customizable Minecraft plugin for creating block generators.",
         "image" => "assets/projects/bucikgenerators.png",
         "language" => "Java",
         "language_class" => "java",
@@ -42,7 +42,7 @@ $projects = [
     ],
     [
         "title" => "WziumDio",
-        "description" => "A simple radio playlist client for Polish radio stations.",
+        "description" => "A lightweight radio playlist client for Polish radio stations.",
         "image" => "assets/projects/wziumdio.png",
         "language" => "PHP",
         "language_class" => "php",
@@ -59,7 +59,7 @@ $projects = [
     ],
     [
         "title" => "Stacks",
-        "description" => "A GTK4 + libadwaita Linux client for the UNO card game.",
+        "description" => "A Linux client for the UNO card game, built with GTK4 and libadwaita.",
         "image" => "assets/projects/stacks.svg",
         "language" => "Python",
         "language_class" => "python",
@@ -73,7 +73,7 @@ $projects = [
     ],
     [
         "title" => "firechat",
-        "description" => "A simple chat server for a proprietary Polish communicator (Gadu-Gadu).",
+        "description" => "A chat server for Gadu-Gadu, a proprietary Polish instant messaging platform.",
         "image" => "assets/projects/firechat.png",
         "language" => "PHP",
         "language_class" => "php",
@@ -87,7 +87,7 @@ $projects = [
     ],
     [
         "title" => "VanishSee",
-        "description" => "An app used for checking hidden online administrators (/vanish) on a Polish Minecraft server (GC2.PL).",
+        "description" => "A tool for detecting administrators using vanish mode on the Polish Minecraft server GC2.PL.",
         "image" => "assets/projects/vanishsee.png",
         "language" => "Python",
         "language_class" => "python",
@@ -101,7 +101,7 @@ $projects = [
     ],
     [
         "title" => "InventoryLogs",
-        "description" => "A Minecraft plugin for logging players' inventory activities.",
+        "description" => "A Minecraft plugin that logs players' inventory interactions.",
         "image" => "assets/projects/inventorylogs.png",
         "language" => "Java",
         "language_class" => "java",
@@ -114,7 +114,7 @@ $projects = [
     ],
     [
         "title" => "MinecraftTimeMachine",
-        "description" => "A tool for reading Minecraft logs in real time.",
+        "description" => "A tool for reading old Minecraft logs in real time.",
         "image" => "assets/projects/minecrafttimemachine.png",
         "language" => "Python",
         "language_class" => "python",
@@ -127,7 +127,7 @@ $projects = [
     ],
     [
         "title" => "BucikTitles",
-        "description" => "A Minecraft plugin for managing users' nametag prefixes.",
+        "description" => "A Minecraft plugin for managing player nametag prefixes.",
         "image" => "assets/projects/buciktitles.png",
         "language" => "Java",
         "language_class" => "java",
