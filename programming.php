@@ -124,6 +124,20 @@ $projects = [
                 "url" => "https://github.com/workonfire/MinecraftTimeMachine"
             ]
         ]
+    ],
+    [
+        "title" => "BucikTitles",
+        "description" => "A Minecraft plugin for managing users' nametag prefixes.",
+        "image" => "assets/projects/buciktitles.png",
+        "language" => "Java",
+        "language_class" => "java",
+        "status" => "OUTDATED",
+        "links" => [
+            [
+                "label" => "Check out",
+                "url" => "https://github.com/workonfire/BucikTitles"
+            ]
+        ]
     ]
 ];
 ?>
