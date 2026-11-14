@@ -111,6 +111,19 @@ $projects = [
                 "url" => "https://github.com/workonfire/InventoryLogs"
             ]
         ]
+    ],
+    [
+        "title" => "MinecraftTimeMachine",
+        "description" => "A tool for reading Minecraft logs in real time.",
+        "image" => "assets/projects/minecrafttimemachine.png",
+        "language" => "Python",
+        "language_class" => "python",
+        "links" => [
+            [
+                "label" => "Check out",
+                "url" => "https://github.com/workonfire/MinecraftTimeMachine"
+            ]
+        ]
     ]
 ];
 ?>
