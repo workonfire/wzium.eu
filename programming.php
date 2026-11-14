@@ -3,7 +3,7 @@ $projects = [
     [
         "title" => "stackslib",
         "description" => "A Python implementation of the UNO card game + a multiplayer server.",
-        "image" => "assets/projects/uno.png",
+        "image" => "assets/projects/stackslib.png",
         "language" => "Python",
         "language_class" => "python",
         "links" => [
@@ -16,7 +16,7 @@ $projects = [
     [
         "title" => "stacksTUI",
         "description" => "A beautiful terminal interface for the UNO game based on stackslib.",
-        "image" => "assets/projects/terminal.png",
+        "image" => "assets/projects/stackstui.png",
         "language" => "Python",
         "language_class" => "python",
         "status" => "ALPHA",
