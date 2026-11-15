@@ -31,7 +31,7 @@ function getImages($dir): false|array {
         <div class="ambient-glow ambient-glow-2"></div>
         <div class="ambient-glow ambient-glow-3"></div>
     </div>
-    <a href="/" class="home-button" aria-label="Strona główna">
+    <a href="/" class="home-button" aria-label="Homepage">
         ← HOME
     </a>
 
